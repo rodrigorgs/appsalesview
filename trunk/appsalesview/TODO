@@ -1,0 +1,24 @@
+BUG:
+* [empty]
+
+TODO List:
+* Daily report summary
+* Create advanced filtering criteria, including data grouping
+  - Partly done. It still lacks a graphical interface
+* Run report download in a separate thread and provide hooks in the downloader
+* Allow saving filtering criteria
+* Allow to download to reports for the same day for two distinct iTunes Connect accounts
+
+DONE:
+* Show info after report download (X reports downloaded...)
+* Detect types of downloads (promo code, update, sale, refund)
+* Create JPanel for total sales
+* [BUG] When selecting both a paid and a free application, the total money becomes 0.0.
+* [BUG] Incorrect character encoding (accents show wrong). The bug is while downloading the report. It is originally UTF-8, but it's saved as some strange encoding (maybe iso-8859-1).
+* [BUG] Promo codes aren't displayed. SOLVED: Not a bug. You have to choose US as country.
+* [BUG] There's need to restart the application in order to see updates
+  - [OK] When loading files
+  - [OK] When downloading reports
+* Remember last item selected when updating form
+* Total in money
+* Refactor and fix data update after report download
