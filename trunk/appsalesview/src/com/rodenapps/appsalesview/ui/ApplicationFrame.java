@@ -85,8 +85,8 @@ public class ApplicationFrame extends JFrame implements FormObserver {
 		tabPane.addTab("Chart", new JScrollPane(plot));
 		tabPane.addTab("Table", table);
 		
-		formPanel = new FormPanel();
-		formPanel.addObserver(this);
+		formPanel = new FormPanel(this);
+		//formPanel.addObserver(this);
 		JSplitPane split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
 		split.add(new JScrollPane(formPanel), 0);
 		split.add(tabPane, 1);
@@ -95,7 +95,9 @@ public class ApplicationFrame extends JFrame implements FormObserver {
 		this.add(summaryPanel, BorderLayout.SOUTH);
 		
 		currentFilter = formPanel.getFilter();
-				
+		
+		//formPanel.notifyObservers();
+		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
 	}

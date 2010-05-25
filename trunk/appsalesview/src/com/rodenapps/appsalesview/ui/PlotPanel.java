@@ -37,7 +37,7 @@ public class PlotPanel extends JPanel {
 	}
 		
 	public JFreeChart createChart(List<Item> items) {
-		XYDataset dataset = createDataset(items);
+		XYDataset dataset = createDataset(items, false);
 		JFreeChart chart = ChartFactory.createTimeSeriesChart("Sales", "Date", "Units", dataset, true, true, false);
 		
 		if (true) {
@@ -45,24 +45,26 @@ public class PlotPanel extends JPanel {
 			NumberAxis axis = (NumberAxis)plot.getRangeAxis();
 			axis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
 			
-			BasicStroke stroke = new BasicStroke(2);
 			XYItemRenderer renderer = plot.getRenderer();
-			renderer.setStroke(stroke);
-//			renderer.setSeriesStroke(0, stroke);
+			//renderer.setStroke(stroke);
+			renderer.setSeriesStroke(0, new BasicStroke(2));
+			renderer.setSeriesStroke(1, new BasicStroke(0.5f));
 		}
         
 		return chart;
 	}
 	
-	private XYDataset createDataset(List<Item> items) {
-		TimeSeries s = new TimeSeries("");
+	private XYDataset createDataset(List<Item> items, boolean income) {
+		TimeSeries s = new TimeSeries("Units");
+		TimeSeries s2 = new TimeSeries("Money");
 		for (Item item : items) {
 			s.add(new Day(item.getDate()), item.getUnits());
-//			s.add(new Day(item.getDate()), item.getIncome());
+			s2.add(new Day(item.getDate()), item.getIncome());
 		}
 		
         TimeSeriesCollection dataset = new TimeSeriesCollection();
         dataset.addSeries(s);
+        dataset.addSeries(s2);
         return dataset;
 	}
 }

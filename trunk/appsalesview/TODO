@@ -2,14 +2,18 @@ BUG:
 * [empty]
 
 TODO List:
+* Export selection to CSV
 * Daily report summary
 * Create advanced filtering criteria, including data grouping
   - Partly done. It still lacks a graphical interface
 * Run report download in a separate thread and provide hooks in the downloader
 * Allow saving filtering criteria
 * Allow to download to reports for the same day for two distinct iTunes Connect accounts
+* maybe show best rank, if available.
 
 DONE:
+* Show yesterday's sales (along with total) in the bottom bar.
+* Show money (along with units) in the chart.
 * Show info after report download (X reports downloaded...)
 * Detect types of downloads (promo code, update, sale, refund)
 * Create JPanel for total sales
