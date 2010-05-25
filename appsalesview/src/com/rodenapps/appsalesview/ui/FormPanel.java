@@ -103,13 +103,18 @@ public class FormPanel extends JPanel implements ActionListener, DocumentListene
 		this.add(txtEndDate);
 		
 		DateFormatter formatter = (DateFormatter)txtBeginDate.getFormatter();
-		dateFormat = (DateFormat)formatter.getFormat();
+		dateFormat = (DateFormat)formatter.getFormat();		
+				
+		updateForm();
+
+		listProductTypes.setSelectedIndex(0);
+		//listAppIds.setSelectedIndex(0);
+		listAppIds.setSelectionInterval(0, listAppIds.getModel().getSize() - 1);
+		//listCountries.setSelectedIndex(0);
+		listCountries.setSelectionInterval(0, listCountries.getModel().getSize() - 1);
 		
 		updateForm();
-		
-		listProductTypes.setSelectedIndex(0);
-		listAppIds.setSelectedIndex(0);
-		listCountries.setSelectedIndex(0);
+		notifyObservers();
 	}
 
 	public void updateForm() throws SQLException {
