@@ -1,0 +1,13 @@
+#summary Como usar o programa AppSalesView para gerar arquivos para o estudo Top Paid Brasil
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
