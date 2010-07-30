@@ -1,4 +1,4 @@
-#summary Como usar o programa !AppSalesView para gerar arquivos para o estudo Top Paid Brasil
+#summary Como usar o programa AppSalesView para gerar arquivos para o estudo Top Paid Brasil
 
 = Download do !AppSalesView =
 
