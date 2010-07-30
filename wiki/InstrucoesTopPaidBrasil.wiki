@@ -2,7 +2,7 @@
 
 = Download do !AppSalesView =
 
-Para baixar o [http://appsalesview.googlecode.com/files/AppSalesView.jar !AppSalesView, clique aqui].
+Para baixar o [http://appsalesview.googlecode.com/files/AppSalesView.jar AppSalesView, clique aqui].
 
 = Instruções =
 
