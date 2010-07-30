@@ -2,7 +2,7 @@
 
 = Download do !AppSalesView =
 
-Para baixar o [http://appsalesview.googlecode.com/files/AppSalesView.jar AppSalesView, clique aqui]. O download é um arquivo JAR (Java Archive), compatível com Mac, Windows e Linux. Para executá-lo, você precisará ter instalado o Java. Em muitos sistemas, basta dar um duplo-clique no arquivo. Pela linha de comando, você deve ir ao diretório onde o arquivo foi salvo e executar a seguinte linha de comando: java -jar !AppSalesView.jar
+Para baixar o [http://appsalesview.googlecode.com/files/AppSalesView.jar AppSalesView, clique aqui]. O download é um arquivo JAR (Java Archive), compatível com Mac, Windows e Linux. Para executá-lo, você precisará ter instalado o Java. Em muitos sistemas, basta dar um duplo-clique no arquivo para executar o programa. Se preferir usar a linha de comando, você deve ir ao diretório onde o arquivo foi salvo e executar o seguinte comando: java -jar !AppSalesView.jar
 
 = Instruções =
 
