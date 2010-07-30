@@ -89,7 +89,7 @@ public class Database extends BaseDAO {
 	public void insertMultipleItems(Collection<Item> items) throws SQLException {
 		insertOrUpdateApps(items);
 		
-		connection.setAutoCommit(false);
+//		connection.setAutoCommit(false);
 		
 		connection.createStatement().execute("DELETE FROM sales_temp");
 		
@@ -106,7 +106,7 @@ public class Database extends BaseDAO {
 		connection.createStatement().execute("INSERT INTO sales " +
 				"SELECT * FROM sales_temp EXCEPT SELECT * FROM sales");
 		
-		connection.commit();
+//		connection.commit();
 	}	
 		
 	public static Item itemFromMap(Map map) {
@@ -170,6 +170,7 @@ public class Database extends BaseDAO {
 			}
 			else {
 				PreparedStatement stmt = connection.prepareStatement("UPDATE app SET title = ? WHERE app_id = ?");
+//				System.out.println(id + " " + map.get(id));
 				stmt.setString(1, map.get(id));
 				stmt.setInt(2, id);
 				executeUpdate(stmt);

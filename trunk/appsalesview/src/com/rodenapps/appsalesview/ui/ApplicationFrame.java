@@ -47,6 +47,7 @@ public class ApplicationFrame extends JFrame implements FormObserver {
 		if (file != null) {
 			AppleCsvParser parser = new AppleCsvParser(file);
 			Collection<Item> items = parser.getItems();
+//			System.out.println(items);
 			db.insertMultipleItems(items);
 		}
 	}
@@ -90,9 +91,10 @@ public class ApplicationFrame extends JFrame implements FormObserver {
 		JSplitPane split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
 		split.add(new JScrollPane(formPanel), 0);
 		split.add(tabPane, 1);
-		split.setDividerLocation(0.4);
+		split.setResizeWeight(0.3);
 		this.add(split, BorderLayout.CENTER);
 		this.add(summaryPanel, BorderLayout.SOUTH);
+//		split.setDividerLocation(0.4);
 		
 		currentFilter = formPanel.getFilter();
 		
