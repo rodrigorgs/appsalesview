@@ -80,10 +80,11 @@ public class FormPanel extends JPanel implements ActionListener, DocumentListene
 		this.add(new JScrollPane(listAppIds));
 		
 		listCountries = new JList();
-		listCountries.setLayoutOrientation(JList.VERTICAL_WRAP);
 		listCountries.addListSelectionListener(this);
+		listCountries.setLayoutOrientation(JList.VERTICAL_WRAP);
+		listCountries.setPreferredSize(new java.awt.Dimension(0, 130));
 		this.add(new JScrollPane(listCountries));
-
+		
 		listProductTypes = new JList();
 		listProductTypes.addListSelectionListener(this);
 		this.add(new JScrollPane(listProductTypes));
