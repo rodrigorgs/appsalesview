@@ -1,0 +1,1 @@
+AppSalesView allows iPhone/iPod/iPad developers to download and visualize Apple's Sales Trend Reports.
