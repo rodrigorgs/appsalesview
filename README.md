@@ -6,7 +6,7 @@ Para baixar o AppSalesView, clique aqui. O download é um arquivo JAR (Java Arch
 
 Eis a tela do AppSalesView:
 
-![AppSalesView-instrucoes.png]
+![](AppSalesView-instrucoes.png)
 
 Na primeira vez que abrir o AppSalesView, você precisa especificar o diretório onde são ou serão guardados os relatórios de vendas do iTunes Connect. Para isso, clique no botão "Choose Data Folder". Se já existirem relatórios no diretório informado, eles serão automaticamente importados.
 
